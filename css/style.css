@@ -456,6 +456,26 @@ header .header_btn {
   color: rgb(33, 33, 33);
 }
 
+.comment {
+  margin-bottom: 100px;
+}
+.comment .main_title {
+  margin-bottom: 40px;
+}
+.comment .comment_in {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.comment .comment_block {
+  max-width: 308px;
+  display: flex;
+  flex-direction: column;
+}
+.comment .comment_block_media {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .home {
     padding: 50px 0;
@@ -511,8 +531,37 @@ header .header_btn {
   .course .main_container .course_icon3 {
     width: 120px;
   }
+  .training {
+    margin-bottom: 50px;
+  }
   .training .training_title img {
     width: 150px;
+  }
+  .comment {
+    margin-bottom: 50px;
+  }
+  .comment .main_title {
+    margin-bottom: 30px;
+  }
+  .comment .comment_in {
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .comment .comment_in .comment_block {
+    display: none;
+    max-width: 100%;
+  }
+  .comment .comment_in .comment_block img {
+    width: 100%;
+  }
+  .comment .comment_in .comment_block_media {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .comment .comment_in .comment_block_media img {
+    width: calc(50% - 10px);
   }
 }
 @media only screen and (max-width: 600px) {

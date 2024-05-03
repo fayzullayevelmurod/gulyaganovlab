@@ -577,6 +577,32 @@ header {
 }
 // training
 
+// comment
+.comment {
+    margin-bottom: 100px;
+
+    .main_title {
+        margin-bottom: 40px;
+    }
+
+    .comment_in {
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comment_block {
+        max-width: 308px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment_block_media {
+        display: none;
+    }
+}
+// comment
+
 
 
 

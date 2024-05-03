@@ -89,9 +89,45 @@
     }
 
     .training {
+        margin-bottom: 50px;
+
         .training_title {
             img {
                 width: 150px;
+            }
+        }
+    }
+
+    .comment {
+        margin-bottom: 50px;
+
+        .main_title {
+            margin-bottom: 30px;
+        }
+
+        .comment_in {
+            flex-wrap: wrap;
+            align-items: start;
+
+            .comment_block {
+                display: none;
+
+                max-width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .comment_block_media {
+                display: flex;
+                align-items: start;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                img {
+                    width: calc(100% / 2 - 10px);
+                }
             }
         }
     }
