@@ -358,6 +358,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+    .main_container {
+        padding: 0 15px;
+    }
+
     p {
         font-size: 15px !important;
         line-height: 22px !important;
@@ -377,6 +382,10 @@
             h6 {
                 font-size: 20px;
             }
+        }
+
+        .header_btn {
+            padding: 10px 15px;
         }
     }
 

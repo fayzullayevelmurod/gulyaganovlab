@@ -853,6 +853,9 @@ footer p a {
   }
 }
 @media only screen and (max-width: 480px) {
+  .main_container {
+    padding: 0 15px;
+  }
   p {
     font-size: 15px !important;
     line-height: 22px !important;
@@ -866,6 +869,9 @@ footer p a {
   }
   header .header_logo h6 {
     font-size: 20px;
+  }
+  header .header_btn {
+    padding: 10px 15px;
   }
   .home .home_btns .home_btc {
     width: 60px;
