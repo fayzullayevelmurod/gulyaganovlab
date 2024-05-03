@@ -84,13 +84,24 @@ address {
 }
 
 .main_container {
-    max-width: 1200px;
+    max-width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
+.home_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 // header
 header {
+    padding: 22px 0;
+    position: relative;
+    z-index: 2;
+    
     .main_container {
         @include flex-center();
         justify-content: space-between;
@@ -117,11 +128,11 @@ header {
     }
     
     .header_btn {
-        color: rgb(255, 255, 255);
-        font-size: 13.67px;
+        color: #fff;
+        font-size: 20px;
         font-weight: 700;
-        line-height: 21.7px;
-        padding: 15px 60px;
+        line-height: 21.7px;      
+        padding: 12px 24px;
         border-radius: 10px;
         background: rgb(23, 44, 93);
     }
@@ -130,7 +141,7 @@ header {
 
 // home
 .home {
-    padding: 30px 0 63px;
+    padding: 90px 0 75px;
 
     .main_container {
         @include flex-center();
@@ -138,61 +149,84 @@ header {
     }
 
     .home_img {
-        max-width: 350px;
-        margin-right: 90px;
+        min-width: 446px;
 
         span {
+            display: flex;
+            justify-content: end;
+            margin-top: 22px;
             color: rgb(0, 0, 0);
             font-size: 15.05px;
             font-weight: 300;
             line-height: 22px;
+            text-align: right;
+            
         }
     }
 
     h1 {
-        color: rgb(33, 33, 33);
-        font-size: 34.59px;
+        color: rgba(23, 44, 93, 1);
+        font-size: 80px;
         font-weight: 900;
-        line-height: 44px;
-        max-width: 570px;
-        margin-bottom: 63px;
+        line-height: 96px;
+        margin-bottom: 40px;
     }
 
     p {
-        color: rgb(33, 33, 33);
-        font-size: 21.38px;
+        max-width: 868px;
+        color: rgba(33, 33, 33, 1);
+        font-size: 32px;
         font-weight: 400;
-        line-height: 28px;
-        max-width: 570px;
-        margin-bottom: 82px;
+        line-height: 32px;
+        margin-bottom: 50px;
+
+        b {
+            font-weight: 800;
+        }
     }
 
     .home_btns {
-        max-width: 540px;
+        max-width: 720px;
         position: relative;
         display: flex;
-        align-items: end;
+        align-items: center;
+
         button {
-            padding: 20px 18px;
+            padding: 18px 36px;
             border-radius: 20px;
             box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.4);
             background: rgb(23, 44, 93);
             color: rgb(255, 255, 255);
-            font-size: 17.66px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 700;
             line-height: 31px;
+            text-align: center;            
+        }
+
+        .home_btn {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 11px;
+        }
+
+        span {
+            color: rgba(0, 0, 0, 1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
         }
 
         .home_line_icon {
             position: absolute;
             right: 50px;
-            bottom: -30%;
+            bottom: 0;
 
         }
 
         .home_btc {
             margin-left: auto;
-            margin-bottom: 10px;
         }
     }
 }
@@ -200,33 +234,47 @@ header {
 
 // registration
 .registration {
+    position: relative;
+    
+    .registration_in {
+        max-width: 782px;
+        margin: 0 auto;
+
+    }
+
+    .registration_bg {
+        position: absolute;
+        left: -10%;
+        top: -100%;
+        z-index: -1;
+    }
+
     h3 {
-        color: rgb(33, 33, 33);
-        font-size: 26.48px;
+        color: rgba(23, 44, 93, 1);
+        font-size: 44px;
         font-weight: 600;
-        line-height: 35.1px;
-        text-align: center;
-        margin-bottom: 38px;
+        line-height: 44px;      
+        margin-bottom: 40px;
     }
 
     .registration_blocks {
         display: flex;
-        gap: 40px;
+        gap: 88px;
     }
 
     h6 {
-        color: rgb(33, 33, 33);
-        font-size: 17.66px;
-        font-weight: 600;
-        line-height: 27px;
+        color: rgba(23, 44, 93, 1);
+        font-size: 17.5px;
+        font-weight: 700;
+        line-height: 27px;        
         margin-bottom: 20px;
     }
 
     p {
-        color: rgb(33, 33, 33);
-        font-size: 13.38px;
+        font-size: 13.25px;
         font-weight: 300;
         line-height: 24.8px;
+        color: rgba(33, 33, 33, 1);
     }
 }
 // registration
