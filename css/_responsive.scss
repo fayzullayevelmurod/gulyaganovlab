@@ -41,6 +41,7 @@
 
         .home_btns {
             max-width: 100%;
+            align-items: start;
         }
     }
 
@@ -112,7 +113,7 @@
             margin-bottom: 25px;
 
             img {
-                width: 42px;
+                width: 33px;
             }
         }
 
@@ -218,6 +219,16 @@
 }
 
 @media only screen and (max-width: 480px) {
+    p {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    button {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
     header {
         .header_logo {
             img {

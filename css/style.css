@@ -283,9 +283,9 @@ header .header_btn {
 }
 .course .course_text p {
   font-size: 16px;
-  font-weight: 500;
   line-height: 21px;
-  color: rgb(0, 0, 0);
+  font-weight: 400;
+  color: rgb(23, 44, 93);
 }
 .course .main_container {
   position: relative;
@@ -386,7 +386,7 @@ header .header_btn {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 22px;
   padding: 18px 53px;
   border-radius: 10px;
   background: rgb(246, 154, 2);
@@ -431,6 +431,7 @@ header .header_btn {
   }
   .home .home_btns {
     max-width: 100%;
+    align-items: start;
   }
   .registration .registration_blocks {
     gap: 30px;
@@ -472,7 +473,7 @@ header .header_btn {
     margin-bottom: 25px;
   }
   .home h1 img {
-    width: 42px;
+    width: 33px;
   }
   .home p {
     font-size: 22px;
@@ -547,6 +548,14 @@ header .header_btn {
   }
 }
 @media only screen and (max-width: 480px) {
+  p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+  button {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
   header .header_logo img {
     width: 50px;
   }
