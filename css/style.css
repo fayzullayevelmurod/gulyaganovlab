@@ -836,6 +836,7 @@ footer p a {
   .accardions .accordion button .accordion-title {
     padding: 10px 0;
     font-size: 16px;
+    line-height: 18px;
   }
   .accardions .accordion .accordion-item .icon {
     flex-shrink: 0;
@@ -847,7 +848,8 @@ footer p a {
     width: 100%;
   }
   .accardions .accordion .accordion-content p {
-    font-size: 14px;
+    font-size: 14px !important;
+    line-height: 16px !important;
   }
 }
 @media only screen and (max-width: 480px) {
