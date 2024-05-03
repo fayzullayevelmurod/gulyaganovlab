@@ -28,6 +28,14 @@
             gap: 50px;
         }
     }
+
+    .accardions {
+        padding: 50px 0;
+
+        .main_container {
+            flex-direction: column;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -289,6 +297,11 @@
                 max-width: 100%;
                 padding: 34px 25px;
 
+                img {
+                    top: -25px;
+                    width: 50px;
+                }
+
                 p {
                     margin-top: 20px;
                 }
@@ -297,6 +310,46 @@
 
         .training_bottom {
             margin-top: 15px;
+        }
+    }
+
+    .accardions {
+        .accardion_title {
+            gap: 10px;
+            width: 100%;
+            flex: auto;
+            img {
+                width: 150px;
+            }
+        } 
+
+        .accordion button {
+            .accordion-title {
+                padding: 10px 0;
+                font-size: 16px;
+
+            }
+        }
+
+        .accordion {
+            .accordion-item {
+                .icon {
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+                    padding: 5px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+
+            .accordion-content {
+                p {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
@@ -328,6 +381,24 @@
         .home_btns {
             .home_btc {
                 width: 60px;
+            }
+        }
+    }
+
+    footer {
+        .main_container {
+            flex-direction: column;
+            gap: 15px;
+
+            .footer_logo {
+                gap: 10px;
+                img {
+                    width: 50px;
+                }
+            }
+
+            p {
+                text-align: left;
             }
         }
     }

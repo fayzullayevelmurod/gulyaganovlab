@@ -476,6 +476,137 @@ header .header_btn {
   display: none;
 }
 
+.accardions {
+  padding: 100px 0 60px;
+}
+.accardions .main_container {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  justify-content: space-between;
+}
+.accardions .accardion_title {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.accardions .accardion_title img {
+  width: 200px;
+}
+.accardions .accordion {
+  flex: 4;
+}
+.accardions .accardion .accardion_item_one {
+  border-top: 1px solid #000;
+}
+.accardions .accordion .accordion-item {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+.accardions .accordion .accordion-item .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accardions .accordion .accordion-item:hover .icon {
+  background: #f3f3f3;
+}
+.accardions .accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accardions .accordion button:hover,
+.accardions .accordion button:focus {
+  cursor: pointer;
+}
+.accardions .accordion button:hover::after,
+.accardions .accordion button:focus::after {
+  cursor: pointer;
+}
+.accardions .accordion button .accordion-title {
+  padding: 20px 0;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 32.4px;
+  color: rgb(33, 33, 33);
+}
+.accardions .accordion button img {
+  transition: 0.2s ease;
+}
+.accardions .accordion button[aria-expanded=true] img {
+  transform: rotate(45deg);
+}
+.accardions .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accardions .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accardions .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accardions .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+footer {
+  border-top: 1px solid rgb(194, 194, 194);
+  padding: 20px 0;
+}
+footer .main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer_logo h6 {
+  color: rgb(33, 33, 33);
+  font-size: 22.75px;
+  font-weight: 700;
+  line-height: 26px;
+}
+footer .footer_logo span {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.9px;
+  text-align: right;
+  color: rgb(33, 33, 33);
+}
+footer p a {
+  display: block;
+}
+
 @media only screen and (max-width: 1200px) {
   .home {
     padding: 50px 0;
@@ -497,6 +628,12 @@ header .header_btn {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+  }
+  .accardions {
+    padding: 50px 0;
+  }
+  .accardions .main_container {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -678,11 +815,39 @@ header .header_btn {
     max-width: 100%;
     padding: 34px 25px;
   }
+  .training .training_in .training_card img {
+    top: -25px;
+    width: 50px;
+  }
   .training .training_in .training_card p {
     margin-top: 20px;
   }
   .training .training_bottom {
     margin-top: 15px;
+  }
+  .accardions .accardion_title {
+    gap: 10px;
+    width: 100%;
+    flex: auto;
+  }
+  .accardions .accardion_title img {
+    width: 150px;
+  }
+  .accardions .accordion button .accordion-title {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  .accardions .accordion .accordion-item .icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  .accardions .accordion .accordion-item .icon img {
+    width: 100%;
+  }
+  .accardions .accordion .accordion-content p {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -702,5 +867,18 @@ header .header_btn {
   }
   .home .home_btns .home_btc {
     width: 60px;
+  }
+  footer .main_container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .main_container .footer_logo {
+    gap: 10px;
+  }
+  footer .main_container .footer_logo img {
+    width: 50px;
+  }
+  footer .main_container p {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */
