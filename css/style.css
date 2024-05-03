@@ -64,6 +64,13 @@ address {
   z-index: -1;
 }
 
+.main_title {
+  color: rgb(23, 44, 93);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
 header {
   padding: 22px 0;
   position: relative;
@@ -129,6 +136,9 @@ header .header_btn {
   font-weight: 900;
   line-height: 96px;
   margin-bottom: 40px;
+}
+.home h1 img {
+  transform: translateY(25%);
 }
 .home p {
   max-width: 868px;
@@ -221,16 +231,86 @@ header .header_btn {
 .result {
   padding: 105px 0;
 }
-.result h3 {
-  color: rgb(33, 33, 33);
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 46.8px;
-  margin-bottom: 30px;
+.result .result_title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.result .slider_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.result .slider_btns button svg {
+  transition: 0.2s ease;
+}
+.result .slider_btns button:hover svg path {
+  fill: white;
+  stroke: white;
+}
+.result .slider_btns button:hover svg circle {
+  stroke: transparent;
+  fill: #172C5D;
+}
+.result .main_title {
+  max-width: 446px;
 }
 .result .resultSwiper {
   overflow: visible;
 }
 .result .resultSwiper img {
   width: 100%;
+}
+
+.course {
+  margin-bottom: 128px;
+  position: relative;
+}
+.course .course_bg {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.course .main_title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.course .course_text {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 38px;
+}
+.course .course_text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 31px;
+  color: rgb(0, 0, 0);
+}
+.course .main_container {
+  position: relative;
+}
+.course .main_container .course_icon1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.course .main_container .course_icon2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.course .main_container .course_icon3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
