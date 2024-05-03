@@ -203,11 +203,7 @@ header .header_btn {
   top: -100%;
   z-index: -1;
 }
-.registration h3 {
-  color: rgb(23, 44, 93);
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 44px;
+.registration .main_title {
   margin-bottom: 40px;
 }
 .registration .registration_blocks {
@@ -401,4 +397,163 @@ header .header_btn {
   font-size: 15.13px;
   font-weight: 400;
   line-height: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home {
+    padding: 50px 0;
+  }
+  .home .main_container {
+    gap: 20px;
+  }
+  .home h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .home h1 img {
+    width: 60px;
+  }
+  .home .home_btns .home_btc {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .main_title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  .home .main_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .home p {
+    max-width: 100%;
+  }
+  .home .home_btns {
+    max-width: 100%;
+  }
+  .registration .registration_blocks {
+    gap: 30px;
+  }
+  .result .slider_btns button svg {
+    width: 45px;
+    height: 45px;
+  }
+  .teachers .teacher_btns svg {
+    width: 45px;
+    height: 45px;
+  }
+  .course .main_container .course_icon1,
+  .course .main_container .course_icon2,
+  .course .main_container .course_icon3 {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main_title {
+    font-size: 27px;
+    line-height: 37px;
+  }
+  header .main_container {
+    gap: 10px;
+  }
+  header .header_btn {
+    font-size: 17px;
+  }
+  header .header_logo {
+    gap: 10px;
+  }
+  .home {
+    padding: 20px 0 50px;
+  }
+  .home h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  .home h1 img {
+    width: 42px;
+  }
+  .home p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .home .home_img {
+    min-width: 100%;
+  }
+  .home .home_img img {
+    width: 100%;
+  }
+  .home .home_btns button {
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+  .home .home_btns .home_btc {
+    width: 80px;
+  }
+  .registration .main_title {
+    margin-bottom: 20px;
+  }
+  .registration .registration_blocks {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .result {
+    padding: 50px 0;
+  }
+  .result .result_title {
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .course {
+    margin-bottom: 50px;
+  }
+  .course .main_title {
+    margin-bottom: 30px;
+  }
+  .course .course_text {
+    gap: 15px;
+  }
+  .course .main_container .course_icon1,
+  .course .main_container .course_icon2,
+  .course .main_container .course_icon3 {
+    width: 70px;
+  }
+  .teachers {
+    margin-bottom: 50px;
+  }
+  .teachers .teachers_title {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .teachers .teachers_title p {
+    margin-top: 15px;
+  }
+  .teachers .teacherSwiper .teacher_block {
+    flex-direction: column;
+  }
+  .register {
+    padding: 40px 0;
+  }
+  .register button {
+    margin: 30px 0 15px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .header_logo img {
+    width: 50px;
+  }
+  header .header_logo h6 {
+    font-size: 20px;
+  }
+  .home .home_btns .home_btc {
+    width: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

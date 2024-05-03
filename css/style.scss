@@ -260,11 +260,7 @@ header {
         z-index: -1;
     }
 
-    h3 {
-        color: rgba(23, 44, 93, 1);
-        font-size: 44px;
-        font-weight: 600;
-        line-height: 44px;      
+    .main_title {    
         margin-bottom: 40px;
     }
 
@@ -511,3 +507,8 @@ header {
     }
 }
 // register
+
+
+
+
+@import './responsive';
