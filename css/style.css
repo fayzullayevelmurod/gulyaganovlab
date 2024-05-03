@@ -399,6 +399,63 @@ header .header_btn {
   line-height: 25px;
 }
 
+.training {
+  margin: 100px 0;
+}
+.training .training_title {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.training .training_title .main_title {
+  max-width: 713px;
+}
+.training .training_in {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.training .training_in .training_card {
+  position: relative;
+  padding: 50px 43px;
+  max-width: 381px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.training .training_in .training_card img {
+  position: absolute;
+  top: -33.5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.training .training_in .training_card h6 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  color: rgb(0, 0, 0);
+}
+.training .training_in .training_card p {
+  margin-top: 27px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.training .training_bottom {
+  margin-top: 45px;
+}
+.training .training_bottom p {
+  margin-left: auto;
+  max-width: 660px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33.6px;
+  color: rgb(33, 33, 33);
+}
+
 @media only screen and (max-width: 1200px) {
   .home {
     padding: 50px 0;
@@ -415,6 +472,11 @@ header .header_btn {
   }
   .home .home_btns .home_btc {
     width: 120px;
+  }
+  .training .training_in {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -449,11 +511,14 @@ header .header_btn {
   .course .main_container .course_icon3 {
     width: 120px;
   }
+  .training .training_title img {
+    width: 150px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .main_title {
     font-size: 27px;
-    line-height: 37px;
+    line-height: 30px;
   }
   header .main_container {
     gap: 10px;
@@ -484,6 +549,9 @@ header .header_btn {
   }
   .home .home_img img {
     width: 100%;
+  }
+  .home .home_img span {
+    margin-top: 10px;
   }
   .home .home_btns button {
     padding: 15px 25px;
@@ -545,6 +613,27 @@ header .header_btn {
     padding: 15px 25px;
     border-radius: 10px;
     font-size: 17px;
+  }
+  .training {
+    margin: 50px 0;
+  }
+  .training .training_title {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .training .training_title img {
+    width: 120px;
+    margin-left: auto;
+  }
+  .training .training_in .training_card {
+    max-width: 100%;
+    padding: 34px 25px;
+  }
+  .training .training_in .training_card p {
+    margin-top: 20px;
+  }
+  .training .training_bottom {
+    margin-top: 15px;
   }
 }
 @media only screen and (max-width: 480px) {

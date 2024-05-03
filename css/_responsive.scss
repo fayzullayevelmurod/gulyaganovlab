@@ -20,6 +20,14 @@
             width: 120px;
         }
     }
+
+    .training {
+        .training_in {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -79,13 +87,21 @@
             
         }
     }
+
+    .training {
+        .training_title {
+            img {
+                width: 150px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
 
     .main_title {
         font-size: 27px;
-        line-height: 37px;
+        line-height: 30px;
     }
 
     header {
@@ -127,6 +143,10 @@
 
             img {
                 width: 100%;
+            }
+
+            span {
+                margin-top: 10px;
             }
         }
 
@@ -214,6 +234,33 @@
             padding: 15px 25px;
             border-radius: 10px;
             font-size: 17px;    
+        }
+    }
+
+    .training {
+        margin: 50px 0;
+        .training_title {
+            flex-direction: column;
+            gap: 5px;
+            img {
+                width: 120px;
+                margin-left: auto;
+            }
+        }
+
+        .training_in {
+            .training_card {
+                max-width: 100%;
+                padding: 34px 25px;
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .training_bottom {
+            margin-top: 15px;
         }
     }
 }
